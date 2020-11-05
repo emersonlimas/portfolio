@@ -1,0 +1,430 @@
+/* Meyer Reset 2.0 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%; /* controle das medidas rem */
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Meyer reset 2.0 ends */
+
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+}
+
+body {
+    background: url(..//img/bg-body.jpg);
+}
+
+#container {
+    margin: 0 auto;
+    width: 860px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#content {
+    background: white;
+}
+
+#profile {
+    background: url(../img/header-shadow.png) #9871F5;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+.about {
+    float: left;
+    margin-top: 30px;
+    width: 490px;
+    margin-left: 20px;
+}
+
+.about .photo-inner {
+    float: left;
+    width: 212px;
+    height: 212px;
+    padding: 12px 0 0 19px;
+}
+
+.about .prof {
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(50,38,77,0.7); 
+    box-shadow: 0px 0px 15px 3px rgba(50,38,77,0.7);
+    border-radius: 10px;
+}
+
+.about .prof:hover {
+    border-radius: 5px;
+}
+
+.about h1 {
+    font-weight: 900;
+    color: var(--color-text-title);
+    line-height: 34px;
+    margin-top: 8px;
+    margin-left: -20px;
+}
+
+.about h3 {
+    margin-top: 5px;
+    font-size: 18px;
+    color: var(--color-text-title);
+    line-height: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.about p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: var(--color-text-title);
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.personal-info {
+    float: left;
+    margin-top: 30px;
+    width: 310px;
+    min-height: 230px;
+    margin-left: 10px;
+    background: url(..//img/personal-info-sep.png) no-repeat left top;
+    padding: 20px 0 19px 20px;
+    list-style-type: none;
+}
+
+.personal-info li {
+    line-height: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    float: left;
+    width: 293px;
+}
+
+.personal-info li label {
+    color: var(--color-text-title);
+    float: left;
+    padding: 4px 7px;
+    font-weight: 550;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.personal-info li span {
+    float: right;
+    width: 220px;
+    padding-top: 4px;
+    font-weight: 400;
+    color: var(--color-text-title);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+header {
+    position: relative;
+    overflow: visible;
+}
+
+span.socials-text {
+    position: absolute;
+    right: 0px;
+    color: white;
+    padding: 2px 9px;
+    font-size: 22px;
+    cursor: pointer;
+    top: 10px;
+    border-radius: 70px;
+}
+
+ul.socialicons {
+    opacity: 0;
+    top: -1px;
+    position: relative;
+    transition: all ease 1s;
+    z-index: -1;
+    left: -7px;
+}
+
+.pulse-button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101, 100, 100);
+    background: var(--color-primary-lighter);
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.menu {
+    height: 100px;
+    background: #ededed;
+    position: relative;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.menu .tabs {
+    height: 117px;
+    position: absolute;
+    margin-top: -14px;
+    z-index: 100;
+    list-style:none;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu li > a {
+    padding-top: 40px;
+    width: 115px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    display: inline-block;
+    color: #b9b9b9;
+    text-align: center;
+    font-weight: 580;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 35px;
+    text-decoration: none;
+    margin-right: 35px;
+}
+
+.tabs li a.active {
+    background: url(../img/tab-hover.png) no-repeat;
+}
+
+.tabs li.active a {
+    color: var(--color-primary-lighter);
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-0px);
+    }
+
+    59% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bouncetwo {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-0px);
+    }
+
+    40% {
+        transform: translateY(-5px);
+    }
+
+    59% {
+        transform: translateY(-10px);
+    }
+}
+
+.tmenu.active i {
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+
+.tmenu a:hover {
+	animation: bouncetwo 1s;
+	-webkit-animation: bouncetwo 1s;
+	-moz-animation: bouncetwo 1s;
+	-o-animation: bouncetwo 1s;
+}
+
+.menu li.active a {
+    color: var(--color-primary-lighter);
+}
+
+.menu li > a > i {
+    font-size: 35px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#logo {
+    float: left;
+    overflow: hidden;
+    margin-left: 10px;
+    display: none;
+}
+
+#logo h4 {
+    color: #555;
+    line-height: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.bg-personal {
+    background: var(--color-small-info) !important;
+    color: var(--color-small-info) !important;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-text-title);
+    text-transform: uppercase;
+}
